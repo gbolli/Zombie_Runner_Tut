@@ -1,1 +1,1 @@
-##GameDev 3D course project - Zombie Runner
+## GameDev 3D course project - Zombie Runner
