@@ -703,6 +703,14 @@ PrefabInstance:
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
+    - target: {fileID: 4218195083070500667, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: fleshHitEffect
+      value: 
+      objectReference: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
+    - target: {fileID: 4218195083070500667, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: surfaceHitEffect
+      value: 
+      objectReference: {fileID: 5472228944227846002, guid: 7d687e7873e6a451c91725027f0ed34a, type: 3}
     - target: {fileID: 5857146886018823762, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_RootOrder
       value: 2
