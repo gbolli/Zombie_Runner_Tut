@@ -687,6 +687,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1461156526 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5857146886018823762, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+  m_PrefabInstance: {fileID: 843416622431073968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2085219872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483596314340346752, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
@@ -768,6 +773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5340349868819422353, guid: be560d2e033824a5f9b17bc6f2062a0b, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1461156526}
     - target: {fileID: 7021427929342042017, guid: be560d2e033824a5f9b17bc6f2062a0b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -811,10 +820,6 @@ PrefabInstance:
     - target: {fileID: 7021427929342042017, guid: be560d2e033824a5f9b17bc6f2062a0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7021427929342042021, guid: be560d2e033824a5f9b17bc6f2062a0b, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7021427929342042022, guid: be560d2e033824a5f9b17bc6f2062a0b, type: 3}
       propertyPath: target
