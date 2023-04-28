@@ -24,21 +24,25 @@ public class EnemyAI : MonoBehaviour
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (distanceToTarget <= chaseRange) EngageTarget();
+        else GetComponent<Animator>().SetTrigger("idle");
     }
 
     private void EngageTarget()
     {
-        if (distanceToTarget <= navMeshAgent.stoppingDistance) AttackTarget();
+        if (distanceToTarget <= navMeshAgent.stoppingDistance + 0.2f) AttackTarget();
         else ChaseTarget();
     }
 
     private void ChaseTarget()
     {
+        GetComponent<Animator>().SetBool("attack", false);
+        GetComponent<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
     }
 
     private void AttackTarget()
     {
+        GetComponent<Animator>().SetBool("attack", true);
         Debug.Log("HaHaHa!   Got you!");
     }
 
