@@ -916,7 +916,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374742103}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1528,18 +1528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4218195083070500667, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
-      propertyPath: hitEffect
+    - target: {fileID: 1303865379191091530, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: gameOverCanvas
       value: 
-      objectReference: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
-    - target: {fileID: 4218195083070500667, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
-      propertyPath: fleshHitEffect
-      value: 
-      objectReference: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
-    - target: {fileID: 4218195083070500667, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
-      propertyPath: surfaceHitEffect
-      value: 
-      objectReference: {fileID: 5472228944227846002, guid: 7d687e7873e6a451c91725027f0ed34a, type: 3}
+      objectReference: {fileID: 532166920}
     - target: {fileID: 5857146886018823762, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_RootOrder
       value: 2
