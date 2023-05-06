@@ -28,6 +28,11 @@ public class EnemyAI : MonoBehaviour
         else GetComponent<Animator>().SetTrigger("idle");
     }
 
+    public void OnDamageTaken()
+    {
+        EngageTarget();
+    }
+
     private void EngageTarget()
     {
         FaceTarget();
