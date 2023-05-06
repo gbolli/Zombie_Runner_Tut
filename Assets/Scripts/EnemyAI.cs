@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     float chaseRange = 10f;
     float distanceToTarget = Mathf.Infinity;
+    bool isProvoked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +25,14 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if (distanceToTarget <= chaseRange) EngageTarget();
-        else GetComponent<Animator>().SetTrigger("idle");
+        if (isProvoked) EngageTarget();
+        else if (distanceToTarget <= chaseRange) isProvoked = true;
+        // else GetComponent<Animator>().SetTrigger("idle");
     }
 
     public void OnDamageTaken()
     {
-        EngageTarget();
+        isProvoked = true;
     }
 
     private void EngageTarget()
