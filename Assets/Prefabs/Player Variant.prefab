@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
@@ -221,6 +221,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9aba54f9821944b5b633d006a1e7944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
+--- !u!114 &5115948774348929389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620660939045610690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d038a1b5464cca8d3ae0ad3920dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
+--- !u!114 &1436667182217251086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620660939045610690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8163a5c3e78a446a90b1370119c4ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  zoomedOutFOV: 40
+  zoomedInFOV: 20
+  zoomedOutSensitivity: 4
+  zoomedInSensitivity: 2
 --- !u!1001 &6845468565265676562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -323,3 +354,4 @@ MonoBehaviour:
   muzzleFlash: {fileID: 8162705940289267172}
   fleshHitEffect: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
   surfaceHitEffect: {fileID: 5472228944227846002, guid: 7d687e7873e6a451c91725027f0ed34a, type: 3}
+  ammoSlot: {fileID: 0}
