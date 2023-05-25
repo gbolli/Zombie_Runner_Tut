@@ -13,21 +13,28 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject fleshHitEffect;
     [SerializeField] GameObject surfaceHitEffect;
     [SerializeField] Ammo ammoSlot;
-
+    [SerializeField] float timeBetweenShots = 0.5f;
+    bool canShoot = true;
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) Shoot();
+        if (Input.GetButtonDown("Fire1") && canShoot) StartCoroutine(Shoot());
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
+        canShoot = false;
+
         if (ammoSlot.GetCurrentAmmo() > 0)
         {
             ammoSlot.ReduceCurrentAmmo();
             PlayMuzzleFlash();
             ProcessRaycast();
         }
+
+        yield return new WaitForSeconds(timeBetweenShots);
+
+        canShoot = true;
     }
 
     private void PlayMuzzleFlash()
