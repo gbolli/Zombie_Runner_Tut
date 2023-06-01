@@ -1807,6 +1807,10 @@ PrefabInstance:
       propertyPath: Grounded
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1008178382518718781, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: RotationSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1303865379191091530, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -1815,6 +1819,10 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 448812422}
+    - target: {fileID: 3399755971241712924, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3399755971241712924, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: damage
       value: 100
@@ -1865,7 +1873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3829110962944019606, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517328421159659576, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_IsActive
@@ -1945,15 +1953,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464312461492448240, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7620660939045610690, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9050951621738134138, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: range
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050951621738134138, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: damage
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050951621738134138, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9120081666613093012, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: m_IsActive
