@@ -6,6 +6,7 @@ using UnityEngine;
 public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] int currentWeapon = 0;
+    int previousWeapon;
 
     void Start()
     {
@@ -14,7 +15,12 @@ public class WeaponSwitcher : MonoBehaviour
 
     void Update()
     {
-        
+        previousWeapon = currentWeapon;
+
+        processKeyInput();
+        // processScrollWheel();
+
+        if (previousWeapon != currentWeapon) SetWeaponActive();
     }
 
     private void SetWeaponActive()
@@ -35,4 +41,17 @@ public class WeaponSwitcher : MonoBehaviour
             weaponIndex++;
         }
     }
+
+    private void processKeyInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1)) currentWeapon = 0;
+        if (Input.GetKeyDown(KeyCode.Alpha2)) currentWeapon = 1;
+        if (Input.GetKeyDown(KeyCode.Alpha3)) currentWeapon = 2;
+    }
+
+    private void processScrollWheel()
+    {
+        throw new NotImplementedException();
+    }
+
 }
