@@ -49,9 +49,20 @@ public class WeaponSwitcher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3)) currentWeapon = 2;
     }
 
+    // TODO: Test with proper mouse
     private void processScrollWheel()
     {
-        throw new NotImplementedException();
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            if (currentWeapon >= transform.childCount - 1) currentWeapon = 0;
+            else currentWeapon++;
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            if (currentWeapon <= 0) currentWeapon = 2;
+            else currentWeapon--;
+        }
     }
 
 }
