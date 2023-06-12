@@ -18,7 +18,7 @@ public class WeaponSwitcher : MonoBehaviour
         previousWeapon = currentWeapon;
 
         processKeyInput();
-        // processScrollWheel();
+        processScrollWheel();
 
         if (previousWeapon != currentWeapon) SetWeaponActive();
     }
@@ -52,13 +52,13 @@ public class WeaponSwitcher : MonoBehaviour
     // TODO: Test with proper mouse
     private void processScrollWheel()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             if (currentWeapon >= transform.childCount - 1) currentWeapon = 0;
             else currentWeapon++;
         }
 
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             if (currentWeapon <= 0) currentWeapon = 2;
             else currentWeapon--;

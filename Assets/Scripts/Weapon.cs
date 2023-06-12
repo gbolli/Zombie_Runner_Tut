@@ -16,6 +16,11 @@ public class Weapon : MonoBehaviour
     [SerializeField] float timeBetweenShots = 0.5f;
     bool canShoot = true;
 
+    private void OnEnable()
+    {
+        canShoot = true;  // to prevent getting stuck on canshoot=false when weapon is switched before coroutine is finished.
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && canShoot) StartCoroutine(Shoot());
