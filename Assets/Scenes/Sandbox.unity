@@ -1879,6 +1879,30 @@ PrefabInstance:
       propertyPath: ammoAmount
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115948774348929389, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmmount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5297985425433124598, guid: abdfc01ef55a843dc858e88d5293b888, type: 3}
       propertyPath: currentWeapon
       value: 0

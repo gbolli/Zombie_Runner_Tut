@@ -360,6 +360,8 @@ MonoBehaviour:
   fleshHitEffect: {fileID: 5213057862344727472, guid: 34a0348e2c551436494611ed60c91c0f, type: 3}
   surfaceHitEffect: {fileID: 5472228944227846002, guid: 7d687e7873e6a451c91725027f0ed34a, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
+  timeBetweenShots: 0.5
 --- !u!114 &1770864076228945972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsCamera: {fileID: 0}
+  fpsController: {fileID: 0}
   zoomedOutFOV: 40
   zoomedInFOV: 20
   zoomedOutSensitivity: 4
