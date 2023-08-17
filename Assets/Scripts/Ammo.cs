@@ -23,7 +23,7 @@ public class Ammo : MonoBehaviour
         GetAmmoSlot(ammoType).ammoAmmount--;
     }
 
-    public void AddCurrentAmmo(AmmoType ammoType, int amount)
+    public void IncreaseCurrentAmmo(AmmoType ammoType, int amount)
     {
         GetAmmoSlot(ammoType).ammoAmmount += amount;
     }
