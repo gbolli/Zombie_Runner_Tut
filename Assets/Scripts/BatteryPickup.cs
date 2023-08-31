@@ -8,10 +8,8 @@ public class BatteryPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            FindObjectOfType<FlashLightSystem>().RechargeFlashlight();
+            other.GetComponentInChildren<FlashLightSystem>().RechargeFlashlight();
             Destroy(gameObject);
         }
-
-
     }
 }
