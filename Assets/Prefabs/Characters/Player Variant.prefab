@@ -232,6 +232,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &5861466289384702919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008178382518718778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ee2fc81f8d24908903979be3af4993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSplatterCanvas: {fileID: 0}
+  displayTime: 0.3
 --- !u!114 &1008178382518718781 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
